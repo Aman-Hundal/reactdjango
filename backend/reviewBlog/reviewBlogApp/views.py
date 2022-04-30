@@ -4,10 +4,10 @@ from .models import User, Post
 
 # Create your views here.
 def index(request):
-  print(Post)
   return HttpResponse("Hello Elliot")
 
 def posts(request):
-  if request.method == "POST":
-    return HttpResponse("posts api create")
   return HttpResponse("posts api")
+
+def posts_create(request):
+  pass
